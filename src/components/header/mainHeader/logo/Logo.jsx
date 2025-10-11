@@ -2,12 +2,11 @@ import "./Logo.css";
 
 function Logo() {
   return (
-    <div className="main-header">
-      <div className="logo">
-        <span className="logo-the">the</span>
-        <span className="logo-curtain">Curtain</span>
-        <span className="logo-shop">shop</span>
-      </div>
+    <div className="logo" role="img" aria-label="The Curtain Shop">
+      <span className="logo-the">the</span>
+      <span className="logo-c">C</span>
+      <span className="logo-urtain">urtain</span>
+      <span className="logo-shop">shop</span>
     </div>
   );
 }

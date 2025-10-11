@@ -1,22 +1,40 @@
 .logo {
   display: flex;
   align-items: baseline;
-  gap: 6px;
+  margin-top: 35px;
 }
 
-/* Approximate site style using fonts */
 .logo-the,
 .logo-shop {
   font-family: "Poppins", Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 28px;
-  color: #6b46c1;
+  color: #a891c4;
   text-transform: lowercase;
+  letter-spacing: -0.02em !important;
+  margin-left: 5px; /* увеличивает расстояние от "Curtain" */
 }
 
-.logo-curtain {
-  font-family: "Great Vibes", cursive;
-  font-size: 40px;
-  color: #8a6db8;
+.logo-urtain {
+  font-family: "Alex Brush", cursive;
+  font-size: 44px;
+  color: #332756;
   line-height: 1;
+  margin-left: -20px; /* move "urtain" into the C */
+  margin-top: 5px; /* move down on Y-axis */
+  letter-spacing: -0.02em;
+  position: relative;
+
+  text-stroke: 0.3px #332756; /* обводка для утолщения */
+}
+
+.logo-c {
+  font-family: "Alex Brush", cursive;
+  font-size: 64px;
+  color: #332756;
+  line-height: 0.7; /* уменьши для сжатия по вертикали */
+  transform: scaleY(1.8) translateY(3px); /* растяни по вертикали */
+  font-weight: 400; /* обычная толщина */
+  position: relative;
+  z-index: 1;
 }

@@ -1,0 +1,24 @@
+.view-cart-btn {
+  background-color: #ac90c0;
+  color: white;
+  border: 1px solid transparent;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.view-cart-btn:hover {
+  background-color: white;
+  color: #ac90c0;
+  border: 1px solid #ac90c0;
+}
+.view-cart-btn:active {
+  background-color: #8b5a96;
+  color: white;
+}

@@ -10,30 +10,6 @@
   text-transform: uppercase;
 }
 
-.search-box {
-  flex: 1;
-  max-width: 400px;
-  display: flex;
-  border: 2px solid #e5e5e5;
-  border-radius: 25px;
-  overflow: hidden;
-}
-
-.search-box input {
-  flex: 1;
-  padding: 12px 20px;
-  border: none;
-  outline: none;
-}
-
-.search-box button {
-  background-color: #6b46c1;
-  border: none;
-  padding: 12px 20px;
-  color: white;
-  cursor: pointer;
-}
-
 .header-right {
   display: flex;
   flex-direction: column;

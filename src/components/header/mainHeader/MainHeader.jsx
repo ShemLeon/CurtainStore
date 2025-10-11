@@ -1,13 +1,16 @@
 import "./MainHeader.css";
+import CallUs from "./callUs/CallUs";
+import Logo from "./logo/Logo";
+import SearchBox from "./searchBox/SearchBox";
+import ViewCart from "./viewCart/ViewCart";
 
 function MainHeader() {
   return (
     <div className="main-header">
-      <div className="logo">
-        <span className="logo-the">the</span>
-        <span className="logo-curtain">Curtain</span>
-        <span className="logo-shop">shop</span>
-      </div>
+      <Logo />
+      <SearchBox />
+      <CallUs />
+      <ViewCart />
     </div>
   );
 }
