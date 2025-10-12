@@ -3,11 +3,42 @@
   font-family: Arial, sans-serif;
 }
 
+/* Top Banner */
+.top-banner {
+  background-color: #332756;
+  padding: 10px 0;
+  text-align: center;
+}
+
 .shipping-message {
   color: white;
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
+}
+
+/* Main Header */
+.main-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 5px;
+  flex-wrap: wrap;
+}
+
+/* Медиа-запрос для мобильных устройств и узких экранов */
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+  }
 }
 
 .header-right {

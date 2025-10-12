@@ -1,12 +1,22 @@
 import "./Header.css";
-import MainHeader from "./mainHeader/MainHeader";
+import CallUs from "./mainHeader/callUs/CallUs";
+import Logo from "./mainHeader/logo/Logo";
+import SearchBox from "./mainHeader/searchBox/SearchBox";
+import ViewCart from "./mainHeader/viewCart/ViewCart";
 import TopBanner from "./topBanner/TopBanner";
 
 function Header() {
   return (
     <header className="header">
+      {/* Top Banner */}
       <TopBanner />
-      <MainHeader />
+      {/* Main Header */}
+      <div className="main-header">
+        <Logo />
+        <SearchBox />
+        <CallUs />
+        <ViewCart />
+      </div>
 
       {/* Navigation */}
       <nav className="main-nav">
