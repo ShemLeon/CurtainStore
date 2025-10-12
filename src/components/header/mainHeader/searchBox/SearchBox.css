@@ -1,12 +1,12 @@
 .search-box {
-  /* display: flex;
-  align-items: stretch; /* change from 'center' to 'stretch' */
+  display: flex;
+  align-items: center;
   background-color: #f1f2f3;
   border: 1px solid #ac90c0;
   border-radius: 10px;
-  min-height: 50px;
-  /* overflow: hidden; */
-  transition: 0.2s; */
+  height: 50px;
+
+  transition: 0.2s;
 }
 
 .search-input {
@@ -27,20 +27,22 @@
 .search-button {
   min-width: 50px;
   height: 100%;
-  background-color: transparent;
   border: none;
-  border-radius: 0px;
+  border-radius: 0 10px 10px 0; /* Скругленные углы только справа */
   color: #ac90c0;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: color 0.2s, background 0.2s;
+  align-self: stretch; /* Это заставит кнопку растянуться на всю высоту */
+  margin: 1px 1px 1px 1; /* Перекрывает границы родителя */
+  /* Только правые углы */
 }
 
 .search-icon {
-  width: 16px;
-  height: 16px;
+  width: 27px;
+  height: 27px;
   fill: currentColor;
 }
 

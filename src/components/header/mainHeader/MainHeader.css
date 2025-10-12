@@ -1,50 +1,22 @@
 .main-header {
   display: flex;
   flex-direction: row;
-  align-items: center; /* Выравнивает flex-элементы по центру по вертикали */
-  gap: 20px;
-  flex-wrap: wrap;
-  padding: 20px 40px; /* Отступы сверху/снизу и слева/справа */
+  align-items: center;
+  justify-content: center;
+  gap: 40px; /* Расстояние между всеми элементами */
+  padding: 20px 40px;
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 5px;
+  flex-wrap: wrap;
 }
 
-.main-header > *:first-child {
-  flex: 0 0 auto; /* flex-grow: 0 (не растягивается), flex-shrink: 0 (не сжимается), flex-basis: auto (размер по содержимому) */
-}
-
-.main-header > *:nth-child(2),
-.main-header > *:nth-child(3) {
-  flex: 1; /* flex-grow: 1 (элемент растягивается и занимает доступное пространство) */
-  display: flex;
-  justify-content: center;
-}
-
-.main-header > *:last-child {
-  flex: 0 0 auto;
-}
 /* Медиа-запрос для мобильных устройств и узких экранов */
 @media (max-width: 768px) {
   .main-header {
     flex-direction: column;
     padding: 20px;
     gap: 20px;
-    align-items: center; /* Центрирует все элементы горизонтально */
-  }
-
-  .main-header > *:first-child,
-  .main-header > *:last-child {
-    flex: none;
-    width: auto;
-    display: flex;
-    justify-content: center;
-  }
-
-  .main-header > *:nth-child(2),
-  .main-header > *:nth-child(3) {
-    flex: none;
-    width: auto;
-    display: flex;
-    justify-content: center;
+    align-items: center;
   }
 }
