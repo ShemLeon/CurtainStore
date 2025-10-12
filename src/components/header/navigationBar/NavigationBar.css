@@ -1,0 +1,109 @@
+/* Navigation */
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.3s ease;
+  vertical-align: middle;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.main-nav a:hover {
+  color: #a78bfa;
+}
+
+.main-nav a:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 25px;
+  right: 25px;
+  height: 3px;
+  background-color: #a78bfa;
+}
+
+.fa {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 10px;
+  transition: color 0.3s ease;
+  vertical-align: middle;
+}
+
+/* Более плавные переходы */
+@media (max-width: 1400px) {
+  .main-nav a {
+    padding: 15px 22px;
+    font-size: 13.8px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-nav a {
+    padding: 15px 18px;
+    font-size: 13.5px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main-nav a {
+    padding: 15px 15px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-nav a {
+    padding: 14px 12px;
+    font-size: 12.5px;
+  }
+}
+
+@media (max-width: 800px) {
+  .main-nav a {
+    padding: 14px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 700px) {
+  .main-nav a {
+    padding: 12px 8px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-nav a {
+    width: 100%;
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+}
