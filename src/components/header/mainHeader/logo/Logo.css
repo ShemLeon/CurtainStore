@@ -23,8 +23,6 @@
   margin-top: 5px; /* move down on Y-axis */
   letter-spacing: -0.02em;
   position: relative;
-
-  text-stroke: 0.3px #332756; /* обводка для утолщения */
 }
 
 .logo-c {
