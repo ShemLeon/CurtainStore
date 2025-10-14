@@ -1,4 +1,4 @@
-.view-cart-btn {
+.viewCartBtn {
   background-color: #ac90c0;
   color: white;
   border: 1px solid transparent;
@@ -13,12 +13,12 @@
   letter-spacing: 0.5px;
 }
 
-.view-cart-btn:hover {
+.viewCartBtn:hover {
   background-color: white;
   color: #ac90c0;
   border: 1px solid #ac90c0;
 }
-.view-cart-btn:active {
+.viewCartBtn:active {
   background-color: #8b5a96;
   color: white;
 }

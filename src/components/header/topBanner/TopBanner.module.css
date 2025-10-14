@@ -1,0 +1,13 @@
+/* Top Banner */
+.topBanner {
+  background-color: #332756;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.shippingMessage {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}

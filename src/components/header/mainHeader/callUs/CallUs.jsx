@@ -1,4 +1,4 @@
-import "./CallUs.css";
+import styles from "./CallUs.module.css";
 
 function CallUs() {
   return (

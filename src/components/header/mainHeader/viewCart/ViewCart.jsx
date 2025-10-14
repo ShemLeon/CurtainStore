@@ -1,11 +1,7 @@
-import "./ViewCart.css";
+import styles from "./ViewCart.module.css";
 
 function ViewCart() {
-  return (
-    <button className="view-cart-btn">
-      VIEW CART
-    </button>
-  );
+  return <button className={styles.viewCartBtn}>VIEW CART</button>;
 }
 
 export default ViewCart;

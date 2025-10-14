@@ -1,12 +1,12 @@
 /* Navigation */
-.main-nav {
+.mainNav {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   gap: 0;
   flex-wrap: wrap;
 }
 
-.main-nav a {
+.mainNav a {
   color: #333;
   display: flex;
   align-items: center;
@@ -23,11 +23,11 @@
   white-space: nowrap;
 }
 
-.main-nav a:hover {
+.maiNav a:hover {
   color: #a78bfa;
 }
 
-.main-nav a:hover::before {
+.mainNav a:hover::before {
   content: "";
   position: absolute;
   top: 0;
@@ -54,54 +54,54 @@
 
 /* Более плавные переходы */
 @media (max-width: 1400px) {
-  .main-nav a {
+  .mainNav a {
     padding: 15px 22px;
     font-size: 13.8px;
   }
 }
 
 @media (max-width: 1200px) {
-  .main-nav a {
+  .mainNav a {
     padding: 15px 18px;
     font-size: 13.5px;
   }
 }
 
 @media (max-width: 1000px) {
-  .main-nav a {
+  .mainNav a {
     padding: 15px 15px;
     font-size: 13px;
   }
 }
 
 @media (max-width: 900px) {
-  .main-nav a {
+  .mainNav a {
     padding: 14px 12px;
     font-size: 12.5px;
   }
 }
 
 @media (max-width: 800px) {
-  .main-nav a {
+  .mainNav a {
     padding: 14px 10px;
     font-size: 12px;
   }
 }
 
 @media (max-width: 700px) {
-  .main-nav a {
+  .mainNav a {
     padding: 12px 8px;
     font-size: 11px;
   }
 }
 
 @media (max-width: 600px) {
-  .main-nav {
+  .mainNav {
     flex-direction: column;
     align-items: center;
   }
 
-  .main-nav a {
+  .mainNav a {
     width: 100%;
     padding: 10px 25px;
     font-size: 14px;
