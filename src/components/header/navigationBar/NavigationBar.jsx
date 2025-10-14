@@ -1,33 +1,25 @@
 import styles from "./NavigationBar.module.css";
 
 function NavigationBar() {
+  const navItems = [
+    { name: "Curtains & Shades", href: "/curtains" },
+    { name: "Valances", href: "/valances" },
+    { name: "Curtain Rods", href: "/rods" },
+    { name: "Bedding", href: "/bedding" },
+    { name: "Clearance", href: "/clearance" },
+    { name: "Custom Pinch Pleated Sheers", href: "/custom" },
+  ];
+
   return (
     <nav className={styles.mainNav}>
-      <a href="#" className="mavItem">
-        <span>Curtains & Shades</span>
-        <i className="fa fa-chevron-down"></i>
-      </a>
-      <a href="#" className="mavItem">
-        <span>Valances</span>
-        <i className="fa fa-chevron-down"></i>
-      </a>
-      <a href="#" className="mavItem">
-        <span>Curtain Rods</span>
-        <i className="fa fa-chevron-down"></i>
-      </a>
-      <a href="#" className="mavItem">
-        <span>Bedding</span>
-        <i className="fa fa-chevron-down"></i>
-      </a>
-      <a href="#" className="mavItem">
-        <span>Clearance</span>
-        <i className="fa fa-chevron-down"></i>
-      </a>
-      <a href="#" className="mavItem">
-        <span>Custom Pinch Pleated Sheers</span>
-        <i className="fa fa-chevron-down"></i>
-      </a>
+      {navItems.map((item) => (
+        <a key={item.name} href={item.href} className={styles.navItem}>
+          <span>{item.name}</span>
+          <i className="fa fa-chevron-down"></i>
+        </a>
+      ))}
     </nav>
   );
 }
+
 export default NavigationBar;

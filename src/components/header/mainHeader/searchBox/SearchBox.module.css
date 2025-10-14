@@ -5,23 +5,7 @@
   border: 1px solid #ac90c0;
   border-radius: 10px;
   height: 50px;
-
   transition: 0.2s;
-}
-
-.searchInput {
-  flex: 1;
-  border: none;
-  background: transparent;
-  padding: 0 calc(50px / 3);
-  color: #3f444b;
-  font-size: 14px;
-  outline: none;
-  transition: color 0.2s;
-}
-
-.searchInput::placeholder {
-  color: #999;
 }
 
 .searchButton {
@@ -40,13 +24,28 @@
   /* Только правые углы */
 }
 
+.searchButton:hover {
+  background-color: #ac90c0;
+  color: #fff;
+}
+
+.searchInput {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 0 calc(50px / 3);
+  color: #3f444b;
+  font-size: 14px;
+  outline: none;
+  transition: color 0.2s;
+}
+
+.searchInput::placeholder {
+  color: #999;
+}
+
 .searchIcon {
   width: 27px;
   height: 27px;
   fill: currentColor;
-}
-
-.searchButton:hover {
-  background-color: #ac90c0;
-  color: #fff;
 }
