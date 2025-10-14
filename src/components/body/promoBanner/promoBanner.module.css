@@ -1,5 +1,4 @@
 /* Promotional Banner */
-
 .promoContainer {
   display: flex;
   width: 100%;
@@ -49,7 +48,7 @@
     overflow: visible;  /* ДОБАВИТЬ - чтобы ничего не обрезалось */
 }
 
-.promoTitle {
+.promoCenter h2 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 20px;
@@ -57,7 +56,7 @@
   padding-top: 15%;
 }
 
-.p {
+.promoCenter p {
   font-size: 1rem;
   margin-bottom: 15px;
   line-height: 1.5;
