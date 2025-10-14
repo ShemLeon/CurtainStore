@@ -13,11 +13,11 @@ function PromoBanner() {
       {/* // центральная часть баннера */}
       <div className={styles.promoCenter}>
         <h2 className={styles.promoTitle}>FREE SHIPPING ON ORDERS OVER $100</h2>
-        <p className={styles.promoText}>
+        <p>
           Only Applicable Within The Continental United States. Not Applicable
           For Long Curtain Rods or for Shipments to the West Coast.
         </p>
-        <p className={styles.promoText}>
+        <p>
           Use code: <strong>100FREE</strong>
         </p>
         <button className={styles.shopButton}>SHOP CURTAINS</button>
