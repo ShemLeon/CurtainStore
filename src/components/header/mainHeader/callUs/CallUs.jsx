@@ -2,9 +2,9 @@ import styles from "./CallUs.module.css";
 
 function CallUs() {
   return (
-    <div className="call-us-block">
-      <p className="call-us-text">Questions? Call Us</p>
-      <a href="tel:1-800-385-4211" className="call-us-phone">
+    <div className={styles.callUsBlock}>
+      <p className={styles.callUsText}>Questions? Call Us</p>
+      <a href="tel:1-800-385-4211" className={styles.callUsPhone}>
         1-800-385-4211
       </a>
     </div>

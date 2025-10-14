@@ -1,4 +1,4 @@
-.call-us-block {
+.callUsBlock {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -6,7 +6,7 @@
   padding: 10px 15px;
 }
 
-.call-us-text {
+.callUsText {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   color: #8b5a96;
@@ -15,7 +15,7 @@
   line-height: 1.2;
 }
 
-.call-us-phone {
+.callUsPhone {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -25,6 +25,6 @@
   line-height: 1.2;
 }
 
-.call-us-phone:hover {
+.callUsPhone:hover {
   color: #8b5a96;
 }

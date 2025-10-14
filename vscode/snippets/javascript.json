@@ -1,0 +1,18 @@
+{
+  "React Component": {
+    "prefix": "react",
+    "body": [
+      "import styles from \"./${1:$TM_FILENAME_BASE}.module.css\";",
+      "",
+      "function ${1:$TM_FILENAME_BASE}() {",
+      "  return (",
+      "    <div>",
+      "    </div>",
+      "  );",
+      "}",
+      "",
+      "export default ${1:$TM_FILENAME_BASE};"
+    ],
+    "description": "React Component"
+  }
+}
