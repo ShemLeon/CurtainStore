@@ -2,20 +2,14 @@
 .customPinchContainer {
   display: flex;
   width: 80%;
-  height: 600px;
-  padding-top: 100px;
+  max-width: 1400px;
+  margin: 80px auto;
+  height: 500px;
 }
-
-.pinchLeft,
-.pinchRight {
-  flex: 1 1 50%;
-  min-width: 0;
-  overflow: hidden;
-}
-
 /* Left side - Image */
 .pinchLeft {
-  position: relative;
+  height: 90%;  /* Let the image container adapt */
+  align-self: center;  /* Center it vertically */
 }
 
 .pinchLeft img {
@@ -23,16 +17,79 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+  border-radius: 15px;
 }
 
 /* Right side - Content */
 .pinchRight {
   background-color: #3d2f5b;
+  width: 60%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 80px 100px;
+  align-items: start; /* Align items to the start (left) */
+  justify-content: center; /* Center content vertically*/
+  padding: 60px;
   color: white;
-  border-radius: 0 15px 15px 0;
+  border-radius: 15px;
+  position: relative;
+  margin-left: -10%;
+  z-index: 2;
+  text-align: left;
+}
+
+.subtitle {
+  font-size: 1.85rem;  /* Change from 1rem */
+  font-weight: 400;
+  letter-spacing: 4px;  /* Change from 3px */
+  color: #a78bfa;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+    margin-bottom: -20px;
+  
+
+}
+
+.pinchRight h2 {
+  font-size: 3.2rem;  
+  font-weight: 700;
+  margin-bottom: 10px; 
+  line-height: 1.1;  
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.exploreButton {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+padding: 15px 50px;  /* Change from 16px 45px */
+margin-top: 0;  /* Change from 20px */
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  will-change: transform;
+  transform-origin: center;
+}
+
+.exploreButton:hover {
+  background: white;
+  color: #3d2f5b;
+  animation: buttonPress 0.3s ease;
+}
+
+@keyframes buttonPress {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

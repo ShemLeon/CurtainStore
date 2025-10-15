@@ -14,7 +14,7 @@ function CustomPinch() {
      {/* Right side - Content */}
       <div className={styles.pinchRight}>
         <p className={styles.subtitle}>THE CURTAIN SHOP</p>
-        <h2>Custom Pinch Pleated Sheers</h2>
+        <h2>Custom Pinch <br></br>Pleated Sheers</h2>
         <button className={styles.exploreButton}>EXPLORE</button>
       </div>
 
