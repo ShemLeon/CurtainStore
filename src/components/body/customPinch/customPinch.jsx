@@ -2,11 +2,11 @@ import styles from "./customPinch.module.css";
 
 function CustomPinch() {
   return (
-    <section className={styles.pinch}>
+    <section className={styles.customPinchContainer}>
       {/* Left side - Image */}
       <div className={styles.pinchLeft}>
         <img
-          src="/src/assets/images/categories/body/left_promo.jpg"
+          src="/src/assets/images/categories/body/custom_pinch.jpg"
           alt="Custom Pinch Pleated Sheers"
         />
      </div>
