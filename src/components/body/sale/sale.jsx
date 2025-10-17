@@ -57,15 +57,17 @@ function Sale() {
     <section className={styles.saleContainer}>
       <div className={styles.saleGrid}>
         {saleItems.map((item) => (
-          <div key={item.id} className={styles.saleItem}>
-            <img
-              src={item.image}
-              alt={item.title}
-              className={styles.saleImage}
-            />
-            <h3>{item.title}</h3>
-            <p className={styles.saleText}>SALE UPTO 30% OFF</p>
-            <button className={styles.shopButton}>SHOP NOW</button>
+          <div
+            key={item.id}
+            className={styles.saleItem}
+            style={{ backgroundImage: `url(${item.image})` }} /* ДОБАВИТЬ */
+          >
+            {/* УДАЛИТЬ тег <img> полностью */}
+            <div className={styles.textOverlay}>
+              <h3>{item.title}</h3>
+              <p className={styles.saleText}>SALE UPTO 30% OFF</p>
+              <button className={styles.shopButton}>SHOP NOW</button>
+            </div>
           </div>
         ))}
       </div>

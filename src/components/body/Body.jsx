@@ -5,13 +5,14 @@ import Sale from "./sale/sale";
 
 function Body() {
   return (
-  <main className={styles.body}>
-    <PromoBanner />
-    <CustomPinch />
-    <Sale />
-
-  </main>
-  )
+    <main className={styles.body}>
+      <PromoBanner />
+      <div className={styles.contentContainer}>
+        <CustomPinch />
+        <Sale />
+      </div>
+    </main>
+  );
 }
 
 export default Body;
