@@ -6,7 +6,7 @@ function PromoBanner() {
       {/* // левая часть баннера */}
       <div className={styles.promoLeft}>
         <img
-          src="/src/assets/images/categories/body/left_promo.jpg"
+          src="/src/assets/images/body/left_promo.jpg"
           alt="Interior Design"
         />
       </div>
@@ -26,7 +26,7 @@ function PromoBanner() {
       {/* // правая часть баннера */}
       <div className={styles.promoRight}>
         <img
-          src="/src/assets/images/categories/body/right_promo.jpg"
+          src="/src/assets/images/body/right_promo.jpg"
           alt="Interior Design"
         />
       </div>

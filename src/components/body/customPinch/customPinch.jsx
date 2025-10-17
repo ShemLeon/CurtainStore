@@ -6,7 +6,7 @@ function CustomPinch() {
       {/* Left side - Image */}
       <div className={styles.pinchLeft}>
         <img
-          src="/src/assets/images/categories/body/custom_pinch.jpg"
+          src="/src/assets/images/body/custom_pinch.jpg"
           alt="Custom Pinch Pleated Sheers"
         />
      </div>
