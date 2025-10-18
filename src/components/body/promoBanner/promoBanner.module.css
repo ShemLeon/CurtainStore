@@ -31,7 +31,7 @@
 }
 
 .promoCenter {
-  padding: 40px 40px; 
+  display: flex;
   flex-direction: column;
   background-color: #e0e0de;
   color: #3d2f5b;
@@ -41,12 +41,13 @@
   align-items: center;
   border-radius: 0;
   justify-content: center;
-  padding: 0;
-  height: 500px;
+  padding: 2%;
+  height: 100%;
   font-family: "Poppins", sans-serif;
-  gap: 20px; 
-  isolation: isolate; /* ДОБАВИТЬ - изоляция контекста */
-  overflow: visible; /* ДОБАВИТЬ - чтобы ничего не обрезалось */
+  gap: 1.5%;
+  isolation: isolate;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .promoCenter h2 {
