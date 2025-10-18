@@ -1,25 +1,28 @@
 import styles from "./shopByCategory.module.css";
-import { saleItems } from "./shopByCategoryData";
+import { sbcItems } from "./shopByCategoryData";
 
 function ShopByCategory() {
   return (
-    <section className={styles.shopByCategoryContainer}>
-      <div className={styles.shbRow}>
-        {saleItems.map((item) => (
-          <div
-            key={item.id}
-            className={styles.shbItem}
-            style={{ backgroundImage: `url(${item.image})` }} 
-          >   
-          <img
-          src="/src/assets/images/body/custom_pinch.jpg"
-          alt="Custom Pinch Pleated Sheers"
-        />       
-            <div className={styles.textOverlay}>
-              <h3>{item.title}</h3>
-              <p className={styles.saleText}>SALE UPTO 30% OFF</p>
-              <button className={styles.shopButton}>SHOP NOW</button>
-            </div>
+    <section className={styles.sbcContainer}>
+      <h2 className={styles.h2}>Shop By Category</h2>
+
+      <div className={styles.sbcRow}>
+        {sbcItems.map((item) => (
+          <div key={item.id} className={styles.sbcCard}>
+            <img
+              src={item.image}
+              alt={item.title}
+              className={styles.sbcImage}
+            />
+            <h3 className={styles.sbcTitle}>{item.title}</h3>
+            <ul className={styles.sbcList}>
+              {item.items.map((listItem, index) => (
+                <li key={index} className={styles.sbcListItem}>
+                  {listItem}
+                </li>
+              ))}
+            </ul>
+            <button className={styles.sbcButton}>VIEW ALL</button>
           </div>
         ))}
       </div>

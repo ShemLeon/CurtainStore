@@ -1,79 +1,75 @@
-/* Sale block */
-.saleContainer {
+/* Shop By Category block */
+.sbcContainer {
   width: 100%;
   box-sizing: border-box;
+  color: #332756;
 }
 
-.saleGrid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 10px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-/* Sale Item Styling */
-.saleItem {
-  position: relative;
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-  box-sizing: border-box;
-  min-width: 0;
-  overflow: hidden;
-  cursor: pointer;
-  aspect-ratio: 7/10;
-  background-size: cover; /* ДОБАВИТЬ */
-  background-position: center; /* ДОБАВИТЬ */
-  background-repeat: no-repeat; /* ДОБАВИТЬ */
+.h2 {
+  font-size: 40px;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: left;
 }
 
 
-/* Text overlay container */
-.textOverlay {
-  height: 60%;
-  width: 100%;
-  white-space: pre-line;
+.sbcRow{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
 
-  z-index: 2;
+.sbcCard {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-  margin: 25% 0; /* ДОБАВИТЬ ЭТУ СТРОКУ - отступы сверху и снизу по 20% */
-  transition: background-color 0.5s ease; 
-}
-
-/* Title text styling */
-.textOverlay h3 {
-  text-align: center; /* выравнивание по центру */
-  width: 90%; 
-  white-space: normal; /* разрешить перенос строк */
-  word-wrap: break-word; /* переносить длинные слова */
-  padding: 0 40px; /* небольшие отступы по бокам */
-  font-size: 25px; 
-  font-weight: bold; 
-  line-height: 1;
-}
-
-/* Sale text styling */
-.saleText {
-  margin: 0px 0; /* уменьшить вертикальные отступы */
-  padding: 0;
-  font-size: 14px; 
   text-align: center;
 }
 
-/* Shop button */
-.shopButton {
-  background-color:#332756;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  font-size: 12px;
+.sbcImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.sbcTitle {
+  font-size: 20px;
   font-weight: bold;
-  margin-top: 5px;
+  color: #332756;
+  margin-bottom: 10px;
+}
+
+.sbcList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  width: 100%;
+}
+
+.sbcListItem {
+  font-size: 16px;
+  color: #332756;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.sbcButton {
+  background-color: #332756;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sbcButton:hover {
+  background-color: #4a3a7a;
 }

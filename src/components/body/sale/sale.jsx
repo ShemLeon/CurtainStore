@@ -9,7 +9,7 @@ function Sale() {
           <div
             key={item.id}
             className={styles.saleItem}
-            style={{ backgroundImage: `url(${item.image})` }} /* ДОБАВИТЬ */
+            style={{ backgroundImage: `url(${item.image})` }}
           >
             {/* УДАЛИТЬ тег <img> полностью */}
             <div className={styles.textOverlay}>

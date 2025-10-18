@@ -1,4 +1,4 @@
-export const shopByCategoryItems = [
+export const sbcItems = [
   {
     id: 1,
     title: "ALL CURTAINS",
