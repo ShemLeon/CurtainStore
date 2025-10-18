@@ -28,15 +28,6 @@
   background-repeat: no-repeat; /* ДОБАВИТЬ */
 }
 
-/* Hover effect - violet background overlay */
-.saleItem::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: rgba(75, 46, 131, 0);
-  z-index: 1;
-  transition: background-color 0.3s ease;
-}
 
 /* Text overlay container */
 .textOverlay {
@@ -56,41 +47,33 @@
   transition: background-color 0.5s ease; 
 }
 
-/* Hover effect for text overlay */
-.textOverlay:hover {
-  background-color: #1f1734; /* фиолетовый фон */
-}
-
 /* Title text styling */
 .textOverlay h3 {
   text-align: center; /* выравнивание по центру */
-  width: 90%; /* на всю ширину контейнера */
+  width: 90%; 
   white-space: normal; /* разрешить перенос строк */
   word-wrap: break-word; /* переносить длинные слова */
   padding: 0 40px; /* небольшие отступы по бокам */
-  font-size: 25px; /* размер шрифта (настройте под свой дизайн) */
-  font-weight: bold; /* жирный шрифт */
-  line-height: 1; /* межстрочный интервал */
+  font-size: 25px; 
+  font-weight: bold; 
+  line-height: 1;
 }
 
 /* Sale text styling */
 .saleText {
   margin: 0px 0; /* уменьшить вертикальные отступы */
   padding: 0;
-  font-size: 14px; /* настройте размер под свой дизайн */
+  font-size: 14px; 
   text-align: center;
 }
 
 /* Shop button */
 .shopButton {
-  background-color: transparent;
+  background-color:#332756;
   border: none;
   color: white;
   padding: 10px 20px;
   font-size: 12px;
   font-weight: bold;
-  cursor: pointer;
   margin-top: 5px;
-  text-decoration: underline;
-  transition: all 0.3s ease;
 }
