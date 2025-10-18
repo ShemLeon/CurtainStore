@@ -1,16 +1,15 @@
 import styles from "./promoBanner.module.css";
+import leftPromoImg from "../../../assets/images/body/left_promo.jpg";
+import rightPromoImg from "../../../assets/images/body/right_promo.jpg";
 
 function PromoBanner() {
   return (
     <section className={styles.promoContainer}>
-      {/* // левая часть баннера */}
+      {/* // Left Side Banner */}
       <div className={styles.promoLeft}>
-        <img
-          src="/src/assets/images/body/left_promo.jpg"
-          alt="Interior Design"
-        />
+        <img src={leftPromoImg} alt="Interior Design" />
       </div>
-      {/* // центральная часть баннера */}
+      {/* // Central Side Banner */}
       <div className={styles.promoCenter}>
         <h2>FREE SHIPPING ON ORDERS OVER $100</h2>
         <p>
@@ -23,12 +22,9 @@ function PromoBanner() {
         <button className={styles.shopButton}>SHOP CURTAINS</button>
       </div>
 
-      {/* // правая часть баннера */}
+      {/* // Right Side Banner */}
       <div className={styles.promoRight}>
-        <img
-          src="/src/assets/images/body/right_promo.jpg"
-          alt="Interior Design"
-        />
+        <img src={rightPromoImg} alt="Interior Design" />
       </div>
     </section>
   );
