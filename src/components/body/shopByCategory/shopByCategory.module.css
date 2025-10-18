@@ -1,12 +1,15 @@
 /* Shop By Category block */
 .sbcContainer {
-  width: 100%;
+  max-width: 1200px;
+   width: 100%;
+    margin: 0 auto;
+      padding: 2rem 1rem;
   box-sizing: border-box;
   color: #332756;
 }
 
 .h2 {
-  font-size: 48px;
+   font-size: clamp(32px, 4vw, 48px);
     font-weight: 700;
   margin-bottom: 2rem;
   letter-spacing: -0.5px;
@@ -16,34 +19,34 @@
 }
 
 .sbcRow {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 1rem;
+  display: grid;
+   grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .sbcCard {
-  flex: 1;
-  min-width: 250px;
-  max-width: 300px;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .sbcImage {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
 .sbcTitle {
-  font-size: 20px;
+    font-size: clamp(16px, 1.5vw, 20px);
   font-weight: bold;
   color: #332756;
-  margin-bottom: 10px;
+  margin-bottom: 0.75rem;
 }
 
 .sbcList {
@@ -66,7 +69,7 @@
   border: none;
   padding: 12px 30px;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: clamp(12px, 1vw, 14px);
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s;

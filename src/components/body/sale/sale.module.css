@@ -1,14 +1,17 @@
 /* Sale block */
 .saleContainer {
+  max-width: 1200px;
   width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
   box-sizing: border-box;
 }
 
 .saleGrid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   grid-template-rows: repeat(2, 1fr);
-  gap: 10px;
+  gap: 0.75%;
   width: 100%;
   box-sizing: border-box;
 }
@@ -21,7 +24,7 @@
   box-sizing: border-box;
   min-width: 0;
   overflow: hidden;
-  cursor: pointer;
+  cursor: default;
   aspect-ratio: 7/10;
   background-size: cover; /* ДОБАВИТЬ */
   background-position: center; /* ДОБАВИТЬ */
@@ -52,8 +55,8 @@
   box-sizing: border-box;
   color: white;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-  margin: 25% 0; /* ДОБАВИТЬ ЭТУ СТРОКУ - отступы сверху и снизу по 20% */
-  transition: background-color 0.5s ease; 
+  margin: 20% 0;
+  transition: background-color 0.5s ease;
 }
 
 /* Hover effect for text overlay */
@@ -63,19 +66,19 @@
 
 /* Title text styling */
 .textOverlay h3 {
-  text-align: center; /* выравнивание по центру */
-  width: 90%; /* на всю ширину контейнера */
-  white-space: normal; /* разрешить перенос строк */
-  word-wrap: break-word; /* переносить длинные слова */
-  padding: 0 40px; /* небольшие отступы по бокам */
-  font-size: 25px; /* размер шрифта (настройте под свой дизайн) */
-  font-weight: bold; /* жирный шрифт */
-  line-height: 1; /* межстрочный интервал */
+  text-align: center;
+  width: 90%;
+  white-space: normal;
+  word-wrap: break-word;
+  padding: 0 10%;
+  font-size: clamp(18px, 1.8vw, 25px);
+  font-weight: bold;
+  line-height: 1;
 }
 
 /* Sale text styling */
 .saleText {
-  margin: 0px 0; /* уменьшить вертикальные отступы */
+  margin: 0.5rem 0;
   padding: 0;
   font-size: 14px; /* настройте размер под свой дизайн */
   text-align: center;
@@ -86,11 +89,11 @@
   background-color: transparent;
   border: none;
   color: white;
-  padding: 10px 20px;
-  font-size: 12px;
+  padding: 0.75rem 1.5rem;
+  font-size: clamp(10px, 0.9vw, 12px);
   font-weight: bold;
   cursor: pointer;
-  margin-top: 5px;
+  margin-top: 0.5rem;
   text-decoration: underline;
   transition: all 0.3s ease;
 }
