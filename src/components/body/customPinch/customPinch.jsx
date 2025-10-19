@@ -1,4 +1,4 @@
-import styles from "./customPinch.module.css";
+import styles from "./CustomPinch.module.css";
 import customPinchImg from "../../../assets/images/body/custom_pinch.jpg";
 
 function CustomPinch() {

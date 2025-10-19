@@ -1,5 +1,5 @@
-import styles from "./sale.module.css";
-import { saleItems } from "./saleData";
+import styles from "./Sale.module.css";
+import { saleItems } from "./SaleData";
 
 function Sale() {
   return (
@@ -11,7 +11,6 @@ function Sale() {
             className={styles.saleItem}
             style={{ backgroundImage: `url(${item.image})` }}
           >
-            {/* УДАЛИТЬ тег <img> полностью */}
             <div className={styles.textOverlay}>
               <h3>{item.title}</h3>
               <p className={styles.saleText}>SALE UPTO 30% OFF</p>

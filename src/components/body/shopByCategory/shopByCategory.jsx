@@ -1,5 +1,5 @@
-import styles from "./shopByCategory.module.css";
-import { sbcItems } from "./shopByCategoryData";
+import styles from "./ShopByCategory.module.css";
+import { sbcItems } from "./ShopByCategoryData";
 
 function ShopByCategory() {
   return (
