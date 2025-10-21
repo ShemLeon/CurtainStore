@@ -11,7 +11,6 @@ function OtherLinks() {
           <Logo />
           <section className={styles.connectSection}>
             <h3>CONNECT WITH US!</h3>
-
             <nav className={styles.socialIcons} aria-label="Social media">
               <a href="#" aria-label="Facebook" className={styles.socialIcon}>
                 f
@@ -19,12 +18,7 @@ function OtherLinks() {
               <a href="#" aria-label="Twitter" className={styles.socialIcon}>
                 t
               </a>
-            </nav>
-
-            <aside className={styles.rating} aria-label="Customer rating">
-              <strong className={styles.ratingStars}>⭐ 4.7</strong>
-              <p className={styles.ratingText}>Shopper Approved</p>
-            </aside>
+            </nav>           
           </section>
         </aside>
 

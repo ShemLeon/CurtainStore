@@ -1,9 +1,9 @@
 /* Shop By Category block */
 .sbcContainer {
   max-width: 1200px;
-   width: 100%;
-    margin: 0 auto;
-      padding: 2rem 1rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
   box-sizing: border-box;
   color: #332756;
 }

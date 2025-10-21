@@ -1,8 +1,11 @@
 .footer {
   background-color: #fff;
-  padding: 40px 0px 20px 0px;
+  padding: 40px 0px 2px 0px;
   margin-top: 50px;
   width: 100%;
+  align-items: start;
+  justify-content: start;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
