@@ -25,22 +25,14 @@
 
 }
 
-.logo {
-  color: #7b68b0;
-  font-size: 28px;
-  font-weight: normal;
-  margin: 0;
-}
 
-.logoItalic {
-  font-style: italic;
-  font-family: 'Georgia', serif;
-}
+
 
 /* Connect Section */
 .connectSection {
   display: flex;
   flex-direction: column;
+  margin-left: 5px;
 }
 
 .connectSection h3 {
