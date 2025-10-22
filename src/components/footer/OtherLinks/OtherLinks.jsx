@@ -1,5 +1,6 @@
 import styles from "./OtherLinks.module.css";
 import Logo from "../../header/mainHeader/logo/Logo";
+import { FaFacebook, FaTelegram } from "react-icons/fa";
 
 function OtherLinks() {
   return (
@@ -12,12 +13,12 @@ function OtherLinks() {
           <section className={styles.connectSection}>
             <h3>CONNECT WITH US!</h3>
             <nav className={styles.socialIcons} aria-label="Social media">
-              <a href="#" aria-label="Facebook" className={styles.socialIcon}>
-                f
-              </a>
-              <a href="#" aria-label="Twitter" className={styles.socialIcon}>
-                t
-              </a>
+<a href="#" aria-label="Facebook" className={styles.socialIcon}>
+  <FaFacebook />
+</a>
+<a href="#" aria-label="Telegram" className={styles.socialIcon}>
+  <FaTelegram />
+</a>
             </nav>           
           </section>
         </aside>
