@@ -50,13 +50,13 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #e8e8e8;
+  background-color: #f2eaef;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: #666;
-  font-size: 18px;
+  color: #935fc8;
+  font-size: 25px;
   font-weight: bold;
   transition: all 0.3s ease;
 }
