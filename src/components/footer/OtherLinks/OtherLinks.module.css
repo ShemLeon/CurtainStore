@@ -118,6 +118,7 @@
   display: inline-block;
   position: relative;
   transition: color 0.35s ease;
+  
 }
 
 .linkColumn a::after {
