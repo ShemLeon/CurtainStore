@@ -94,7 +94,8 @@
 
 .linkColumn h3 {
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;  /* or 800 for even bolder */
+  font-family: 'Playfair Display', serif;  /* if using this font */
   margin-bottom: 15px;
   color: #333;
 }
@@ -118,7 +119,7 @@
   display: inline-block;
   position: relative;
   transition: color 0.35s ease;
-  
+
 }
 
 .linkColumn a::after {
@@ -131,13 +132,15 @@
   background-color: currentColor;
   transform: scaleX(0);
   transform-origin: left center;
-  transition: transform 0.15s ease;
+  transition: transform 0s ease;
 }
-
-
 
 .linkColumn a:hover {
   color: #f3ba3f;
+}
+
+.linkColumn a:hover::after {
+  transform: scaleX(1);
 }
 
 /* Responsive */

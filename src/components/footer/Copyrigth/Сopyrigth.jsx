@@ -5,7 +5,7 @@ function Copyrigth() {
     <section className={styles.copyrigthContainer}>
       <article className={styles.footerBottom}>
         <p className={styles.copyright}>
-          <small>Copyright © 2023 The Curtain Shop</small>
+          <small>Copyright © 2025 The Curtain Shop</small>
         </p>
         
         <figure className={styles.paymentIcons}>
