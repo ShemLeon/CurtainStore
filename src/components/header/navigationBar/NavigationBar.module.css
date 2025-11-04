@@ -6,52 +6,6 @@
   flex-wrap: wrap;
 }
 
-.mainNav a {
-  color: #333;
-  display: flex;
-  align-items: left;
-  justify-content: left;
-  gap: 5px;
-  padding: 15px 25px;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 600;
-  position: relative;
-  transition: all 0.3s ease;
-  vertical-align: middle;
-  line-height: 1;
-  white-space: nowrap;
-}
-
-.mainNav a:hover {
-  color: #a78bfa;
-}
-
-.mainNav a:hover::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 20px;
-  right: 20px;
-  height: 3px;
-  background-color: #a78bfa;
-}
-
-.fa {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-  display: inline-block;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 10px;
-  transition: color 0.3s ease;
-  vertical-align: middle;
-}
-
 /* Более плавные переходы */
 @media (max-width: 1400px) {
   .mainNav a {
