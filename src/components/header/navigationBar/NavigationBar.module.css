@@ -6,7 +6,6 @@
   flex-wrap: wrap;
 }
 
-/* Более плавные переходы */
 @media (max-width: 1400px) {
   .mainNav a {
     padding: 15px 22px;
