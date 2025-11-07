@@ -2,11 +2,23 @@
   position: relative;
   display: flex;
   flex-direction: column;
+    padding-bottom: 5px;
+}
+
+.navItemWrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -5px; /* покрывает до низа, включая padding-bottom */
+  z-index: 1;
+  pointer-events: auto;
 }
 
 .navItem {
   color: #333;
-  display: flex;
+  display: inline-block;
   align-items: left;
   justify-content: left;
   gap: 5px;
@@ -19,6 +31,10 @@
   vertical-align: middle;
   line-height: 1;
   white-space: nowrap;
+  width: auto;
+  box-sizing: border-box;
+    z-index: 2; /* чтобы текст был поверх покрытия */
+  pointer-events: auto; /* чтобы ссылка работала */
 }
 
 .navItem:hover {

@@ -1,10 +1,11 @@
-import styles from './NavigationBar.module.css';
-import { useDropdown } from './dropDownMenu/viewModels/useDropDown';
-import { navItemsData } from './dropDownMenu/models/dropdownData';
-import NavItem from './components/NavItem';
+import styles from "./NavigationBar.module.css";
+import { useDropdown } from "./dropDownMenu/viewModels/useDropDown";
+import { navItemsData } from "./dropDownMenu/models/dropdownData";
+import NavItem from "./components/NavItem";
 
 function NavigationBar() {
-  const { openDropdown, handleMouseEnter, handleMouseLeave, isDropdownOpen } = useDropdown();
+  const { openDropdown, handleMouseEnter, handleMouseLeave, isDropdownOpen } =
+    useDropdown();
 
   return (
     <nav className={styles.mainNav}>
