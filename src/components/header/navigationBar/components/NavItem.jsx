@@ -1,6 +1,6 @@
 import './NavItem.css';
 import DropdownMenu from '../dropDownMenu/DropDownMenu';
-import { curtainsDropdownData } from '../dropDownMenu/models/dropdownData';
+import { curtainsDropdownData } from '../dropDownMenu/models/DropDownData';
 
 function NavItem({ item, isDropdownOpen, onMouseEnter, onMouseLeave }) {
   return (
